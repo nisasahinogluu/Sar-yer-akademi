@@ -3,7 +3,7 @@
 Bu repo, Transformer tabanlı modeller hakkında yapılan bir literatür taramasını içermektedir. Çalışma kapsamında, son üç yıl içinde yayınlanmış iki farklı makale seçilmiş ve detaylı özetleri hazırlanmıştır. Özetler **LaTeX formatında** yazılmış ve PDF olarak oluşturulmuştur. 
 
 ## Çalışmanın Amacı  
-Bu çalışmada, Transformer tabanlı modellerin farklı alanlardaki kullanımını incelemek ve güncel gelişmeleri anlamak amaçlanmıştır. Seçilen makaleler:  
+Bu çalışmada, Transformer tabanlı modellerin farklı alanlardaki kullanımını içeren iki makale sarıyer akademisinin Ka|Ve 2024 - Yapay Zeka Special Force Eğitimi - Seçme Sınav Soruları için araştırılmış ve özetleri yazılmıştır. Seçilen makaleler:  
 
 1. **Pirinç Hastalıklarının Tespiti İçin Detection Transformer**  
    - **Başlık:** Disease Detection and Identification of Rice Leaf Based on Improved Detection Transformer  
