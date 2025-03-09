@@ -1,0 +1,52 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb}
+
+\title{Transformer Tabanlı Modeller Üzerine Son Üç Yıl İçinde Yayınlanmış İki Makalenin Özeti}
+\author{Nisa Şahinoğlu}
+\date{Mart 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Giriş}
+Transformer tabanlı modeller, özellikle doğal dil işleme (NLP) ve bilgisayarla görme (CV) alanlarında büyük ilerlemeler kaydetmiştir. Son yıllarda, bu modellerin tarım, uzaktan algılama, tıbbi görüntüleme ve endüstriyel analiz gibi çeşitli alanlarda uygulanabilirliği önemli ölçüde artmıştır. Literatür taraması sonucunda seçilen ve son üç yıl içinde yayımlanan iki farklı makalenin özetleri detaylı bir şekilde ilerleyen bölümlerde sunulmuştur. Seçilen makaleler, pirinç hastalıklarının tespiti ve uzaktan algılama görüntülerinde nesne tespiti gibi alanlardaki Transformer tabanlı uygulamaları kapsamaktadır.
+
+\section{Makale 1: Pirinç Yapraklarındaki Hastalıkların Tespiti İçin Geliştirilmiş Transformer Modeli}
+\textbf{Başlık:} Disease Detection and Identification of Rice Leaf Based on Improved Detection Transformer\\
+\textbf{Kaynak:} MDPI - Agriculture\\
+\textbf{Yıl:} 2023\\
+
+Bu çalışma, pirinç tarımında hastalıkların erken tespiti ve yönetimi için bir Detection Transformer tabanlı modelin kullanımını ele almaktadır. Pirinç hastalıkları, mahsul verimini ve kalitesini ciddi şekilde etkileyebilecek önemli bir problemdir. Geleneksel görüntü sınıflandırma yöntemleri, hastalıklı yaprakları genel kategorilerde sınıflandırabilse de, tek bir yaprak üzerinde birden fazla hastalığın bulunması durumunda bu yöntemler yetersiz kalmaktadır.
+
+Önerilen model, pirinç yaprakları üzerindeki farklı hastalıkları küçük nesnelerin tespiti problemine dönüştürerek, nesne tespiti ve segmentasyon algoritmalarını kullanmaktadır. Araştırmacılar, Transformer tabanlı bir nesne tespit modeli geliştirerek, görüntü tabanlı analizlerde daha yüksek doğruluk ve hassasiyet sağlamayı hedeflemişlerdir. Model, pirinç yaprakları üzerindeki hastalıkları bölgesel olarak tespit etmekte ve sınıflandırmaktadır. Bunun için geliştirilmiş Detection Transformer modeli, geleneksel CNN tabanlı yöntemlere kıyasla daha yüksek doğruluk sağlamış ve küçük hedeflerin tespitinde üstün performans göstermiştir.
+
+Çalışmada kullanılan veri kümesi, pirinç tarlalarından alınan yüksek çözünürlüklü görüntülerden oluşmaktadır. Modelin eğitim ve test aşamalarında, hassasiyet (precision), geri çağırma (recall) ve F1-skora göre değerlendirmeler yapılmıştır. Sonuçlar, önerilen modelin geleneksel yöntemlere göre daha yüksek doğruluk sunduğunu ve pirinç hastalıklarının erken teşhisinde başarılı bir alternatif sunduğunu göstermektedir.
+
+\section{Makale 2: Uzaktan Algılama Nesne Tespiti İçin Convolution ve Swin Transformer Tabanlı Model}
+\textbf{Başlık:} Remote Sensing Object Detection Based on Convolution and Swin Transformer\\
+\textbf{Kaynak:} ResearchGate\\
+\textbf{Yıl:} 2023\\
+
+Bu makale, uzaktan algılama görüntülerinde nesne tespiti için geliştirilmiş bir model olan RAST-YOLO'yu (Region Attention ve Swin Transformer ile güçlendirilmiş "You Only Look Once") tanıtmaktadır. Uzaktan algılama görüntülerinde nesne tespiti, küçük nesnelerin varlığı, ölçek değişkenliği ve karmaşık arka planlar gibi zorluklar nedeniyle geleneksel yöntemler için ciddi bir meydan okumadır.
+
+Önerilen model, YOLO tabanlı bir nesne tespit sistemini, Transformer tabanlı Swin Transformer ve özel bir bölgesel dikkat (Region Attention - RA) mekanizması ile birleştirmektedir. Region Attention mekanizması, özellik haritalarındaki bilgi etkileşim aralığını genişleterek, nesnenin arka plan bilgisiyle daha iyi ilişkilendirilmesini sağlamaktadır. Bu sayede, küçük nesnelerin tespit doğruluğu artırılmaktadır.
+
+Swin Transformer bileşeni, kayan pencere dikkat mekanizması ve hiyerarşik yapı sayesinde, büyük ölçekli uzaktan algılama görüntülerindeki nesnelerin daha verimli ve doğru bir şekilde tespit edilmesine olanak tanımaktadır. Bu yaklaşım, geleneksel CNN tabanlı yöntemlere göre önemli ölçüde daha başarılı sonuçlar vermektedir.
+
+Modelin başarımı, DIOR ve TGRS-HRRSD gibi popüler uzaktan algılama veri setlerinde test edilmiştir. Yapılan deneyler, önerilen modelin ortalama hassasiyet (mAP) değerlerinde DIOR veri setinde \%5, TGRS-HRRSD veri setinde ise \%2.3'lük bir artış sağladığını göstermektedir. Bu bulgular, Swin Transformer ve RA mekanizması ile geliştirilen bu yaklaşımın, uzaktan algılama nesne tespiti alanında önemli bir ilerleme sağladığını ortaya koymaktadır.
+
+\section{Sonuç}
+Seçilen iki makale, Transformer tabanlı modellerin farklı alanlardaki etkisini ve kullanım potansiyelini vurgulamaktadır. İlk makale, pirinç tarımında hastalık tespitinde Detection Transformer modelinin kullanımını ele alırken, ikinci makale, uzaktan algılama görüntülerinde nesne tespitini geliştirmek için Swin Transformer ve Region Attention mekanizmasını birleştiren RAST-YOLO modelini tanıtmaktadır. Her iki çalışma da, modern derin öğrenme tekniklerinin tarım ve uzaktan algılama gibi pratik uygulamalarda nasıl devrim yaratabileceğini göstermektedir. Transformer tabanlı yaklaşımlar, büyük ölçekli görüntü işleme problemlerinde üstün performans sağlayarak, daha doğru ve güvenilir analizler yapılmasına olanak tanımaktadır.
+
+\section{Kaynaklar}
+\begin{enumerate}
+    \item \href{https://www.mdpi.com/2077-0472/13/7/1361}{Disease Detection and Identification of Rice Leaf Based on Improved Detection Transformer - MDPI}
+    \item \href{https://www.researchgate.net/publication/370080729_Remote_Sensing_Object_Detection_Based_on_Convolution_and_Swin_Transformer}{Remote Sensing Object Detection Based on Convolution and Swin Transformer - ResearchGate}
+\end{enumerate}
+
+\end{document}
