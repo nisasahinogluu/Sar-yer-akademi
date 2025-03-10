@@ -24,8 +24,4 @@ Bu çalışmada, Transformer tabanlı modellerin farklı alanlardaki kullanımı
 - **Latex Kullanımı:** Özetler LaTeX ile hazırlanmış olup, `literature_review.tex` dosyasında bulunmaktadır.  
 - **PDF Çıktısı:** Derlenmiş PDF dosyası `literature_review.pdf` olarak eklenmiştir.  
 
-## Kullanım  
-Projeyi kendi bilgisayarınızda çalıştırmak için:  
-```bash
-git clone https://github.com/kullanici-adi/literature-review.git
-cd literature-review
+
